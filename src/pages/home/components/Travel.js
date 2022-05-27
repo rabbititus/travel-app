@@ -101,7 +101,9 @@ const Travel = () => {
                         </figure>
 
                         <div className="card-body">
-                          <h5 className="card-title">{travel.name}</h5>
+                          <h5 className="card-title">
+                            {travel.name} - {travel.destination}
+                          </h5>
                           <p className="card-text">
                             {getTravelDates(travel.dates)}
                           </p>
