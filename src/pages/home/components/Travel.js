@@ -38,7 +38,7 @@ const Travel = () => {
     fetchData();
   }, []);
 
-  const deleteContact = async (id) => {
+  const deleteTrip = async (id) => {
     try {
       const res = await fetch(
         `https://628f2a700e69410599d67d03.mockapi.io/api/v1/travels/${id}`,
@@ -48,7 +48,6 @@ const Travel = () => {
       );
       const result = await res.json();
       if (!result.error) {
-        setTravelList(result.myContacts);
         toast.success("Trip has been deleted.");
         setShowModal(false);
         fetchData();
@@ -138,7 +137,7 @@ const Travel = () => {
         <Modal.Footer>
           <button
             className="btn btn-danger"
-            onClick={() => deleteContact(modalData.id)}
+            onClick={() => deleteTrip(modalData.id)}
           >
             Delete
           </button>
