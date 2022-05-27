@@ -1,8 +1,10 @@
-# Test on Netlify
-
-[https://main--comfy-eclair-114db1.netlify.app/](https://main--comfy-eclair-114db1.netlify.app/)
+# Travel App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Test on Netlify
+
+[https://main--comfy-eclair-114db1.netlify.app/](https://main--comfy-eclair-114db1.netlify.app/)
 
 ## Available Scripts
 
